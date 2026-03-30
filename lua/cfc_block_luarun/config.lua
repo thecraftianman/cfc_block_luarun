@@ -60,6 +60,10 @@ local ALLOWED_LUA = {
     ["1aaf5f0e6adf4762308dbe034bfe6d5e"] = true, -- include('gm_cartride_quiztext.lua')
     ["bb816f5f15aa2a07c9951046c03b07e6"] = true, -- CHECKPOINT_ID = 4;  include('gm_cartride_obbytrigger.lua');
     ["e89399cff3fa0e85faea19965ae3048d"] = true, -- CHECKPOINT_ID = 5;  include('gm_cartride_obbytrigger.lua');
+
+    -- gm_pantheon
+    ["70f78527c12a2d6453981ca45a7f0699"] = true, -- local c = ents.FindByClass('player') for _,i in ipairs(c) do if (i:GetPos():WithinAABox(Vector(11776,-10725,-16000),Vector(-11264,11776,-16256))) then i:KillSilent() end end
+    ["102e1ff2c85876588af1cd1e0137cd41"] = true, -- MAP_HELINPC={npc_combinegunship=true,npc_helicopter=true,npc_combinedropship=true} hook.Add([[OnEntityCreated]],[[map_sethelinpcnode]],function(ent) if MAP_HELINPC[ent:GetClass()] then ent:Fire([[settrack]],[[helipathstart]],0) end end)
 }
 
 local BLOCKED_LUA = {
