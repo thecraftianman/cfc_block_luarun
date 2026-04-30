@@ -66,7 +66,7 @@ local ALLOWED_LUA = {
     ["102e1ff2c85876588af1cd1e0137cd41"] = true, -- MAP_HELINPC={npc_combinegunship=true,npc_helicopter=true,npc_combinedropship=true} hook.Add([[OnEntityCreated]],[[map_sethelinpcnode]],function(ent) if MAP_HELINPC[ent:GetClass()] then ent:Fire([[settrack]],[[helipathstart]],0) end end)
 
     -- zgr_school_snbp_v2_void
-    ["957cba8e44d8f97e3d480385b4612e36"] = true, -- include('locust.lua')
+    ["957cba8e44d8f97e3d480385b4612e36"] = true, -- include('locust.lua')  -- NOTE: This is for the locust nextbot in this map
 }
 
 local BLOCKED_LUA = {
